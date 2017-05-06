@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Synapse</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <%= link_to image_tag("synapse-logo.png", class: "logo"), root_path %>
+
+      <% if user_signed_in? %>
+      <div class="navbarItem">
+
+        <div class='login-state'><%= link_to 'Home', root_path %> | <strong><%= link_to current_user.username, profile_path %></strong></div>
+
+        </br>
+
+        <span class="pull-right">
+
+          <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link' %> |
+
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+
+        </span>
+
+      </div>
+      <% else %>
+      <div class="navbarItem">
+
+        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+
+        <%= link_to "Sign In", new_user_session_path, :class => 'navbar-link'  %> | <%= link_to 'Home', root_path %>
+
+      </div>
+      <% end %>
+
+    </div>
+    <%= render "layouts/flash" %>
+    <%= yield %>
+
+
+  </div>
+  </body>
+
+</html>

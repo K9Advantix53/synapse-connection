@@ -1,0 +1,39 @@
+<div id='profilePage'>
+  <p id='profileUsername'>
+    <%= @current_user.username %>
+  </p>
+  <p id='profileFullName'>
+    <%= @current_user.first_name %>
+    <%= @current_user.last_name %>
+  </p>
+</br>
+
+<div class="half">
+  <div class="tab">
+    <input id="tab-one" type="checkbox" name="tabs">
+    <label for="tab-one">Open Projects</label>
+    <div class="tab-content">
+      <ul>
+        <% @current_user.owned_projects.each do |project| %>
+          <li>
+            <%= link_to project.title, project_path(project) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab">
+    <input id="tab-two" type="checkbox" name="tabs">
+    <label for="tab-two">Create a Project</label>
+    <div class="tab-content">
+      <ul>
+        <% @current_user.projects.each do |project| %>
+          <li>
+            <%= link_to project.title, project_path(project) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

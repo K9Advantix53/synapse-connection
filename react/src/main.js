@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import ProjectIndexContainer from './containers/ProjectIndexContainer'
 import ProjectNewForm from './containers/ProjectNewForm'
 import ProjectShowContainer from './containers/ProjectShowContainer'
+import ProjectSearchContainer from './containers/ProjectSearchContainer'
 import JoinButton from './components/JoinButton'
 
 $(function() {
@@ -38,6 +39,15 @@ $(function() {
     ReactDOM.render(
       <ProjectNewForm />,
       document.getElementById('projectForm')
+    );
+  }
+});
+
+$(function() {
+  if (document.getElementById('projectSearch')) {
+    ReactDOM.render(
+      <ProjectSearchContainer />,
+      document.getElementById('projectSearch')
     );
   }
 });

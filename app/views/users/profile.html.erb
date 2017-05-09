@@ -11,7 +11,7 @@
 <div class="half">
   <div class="tab">
     <input id="tab-one" type="checkbox" name="tabs">
-    <label for="tab-one">Open Projects</label>
+    <label for="tab-one">Owned Projects</label>
     <div class="tab-content">
       <ul>
         <% @current_user.owned_projects.each do |project| %>
@@ -25,7 +25,7 @@
 
   <div class="tab">
     <input id="tab-two" type="checkbox" name="tabs">
-    <label for="tab-two">Create a Project</label>
+    <label for="tab-two">Coding Projects</label>
     <div class="tab-content">
       <ul>
         <% @current_user.projects.each do |project| %>

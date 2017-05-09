@@ -23,7 +23,7 @@ label {
 }
 
 html {
-  background: url('THIS-IMAGE.jpg');
+  background: url('fog-resize.jpg');
   background-size: cover;
   background-repeat: repeat-y;
   height: 100vh;
@@ -49,6 +49,45 @@ li {
   transition: 0.3s;
 }
 
+.results {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.project {
+  justify-content: center;
+  font-family: 'Raleway';
+  font-size: 36px;
+  background-color: #e6e6e6;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.searchBar {
+  margin-bottom: 20px;
+}
+
+.projectTitle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.projectBody {
+  font-size: .50em;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar:hover {
+  opacity: 1;
+}
+
 .pull-right {
   padding-right: 20px;
 }
@@ -59,6 +98,7 @@ li {
 
 .navbarItem {
   float: right;
+  color: white;
 }
 
 .field {
@@ -77,13 +117,24 @@ li {
   text-align: left;
 }
 
+#loginName {
+  float: right;
+  padding-right: 20px;
+}
+
 a {
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
 
-a:visited {
+.navbarItem a {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 20px;
+}
+
+.navbarItem a:visited {
   color: white;
 }
 

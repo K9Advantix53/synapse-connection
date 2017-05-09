@@ -19,13 +19,13 @@ angelina = User.create!(first_name: "Angelina", last_name: "Jolie", username: "M
 
 
 
-project1 = Project.create(title: "Calendar App for Masseurs", description: "Build an app that will help our masseurs on track! Should be built with React on Rails", owner_id: george.id)
+project1 = Project.create(title: "Calendar App", description: "Build an app that will help our masseurs on track! Should be built with React on Rails", owner_id: george.id)
 
 project2 = Project.create(title: "Mobile Note Taking App", description: "Build an app that will allow users to take notes using their finger to write on their mobile devices. Should be built in Swift", owner_id: angelina.id)
 
-project3 = Project.create(title: "Meetup App for Guitar Enthusiasts", description: "Build an app that will help guitar hobbiests from around your area get in touch for a jam sesh!", owner_id: holly.id)
+project3 = Project.create(title: "Meetup App", description: "Build an app that will help guitar hobbiests from around your area get in touch for a jam sesh!", owner_id: holly.id)
 
-project4 = Project.create(title: "Meetup App for Cat Enthusiasts", description: "Build an app that will help cat hobbiests from around your area get in touch for a cat playdate!", owner_id: steve.id)
+project4 = Project.create(title: "Cat Enthusiasts App", description: "Build an app that will help cat hobbiests from around your area get in touch for a cat playdate!", owner_id: steve.id)
 
 
 Assignment.create(project: project1, user: holly)

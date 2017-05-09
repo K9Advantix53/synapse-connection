@@ -10,6 +10,7 @@ class Api::V1::ProjectsController < ApplicationController
   end
 
   def create
+
     body=request.body.read
     parsed=JSON.parse(body)
     project=Project.new(parsed)
@@ -19,5 +20,11 @@ class Api::V1::ProjectsController < ApplicationController
     else
       render json: { message: project.errors.full_messages}
     end
+  end
+
+  private
+
+  def search_params
+    params.permit(:search)
   end
 end

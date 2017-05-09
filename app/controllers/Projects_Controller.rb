@@ -33,6 +33,9 @@ class ProjectsController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+  end
+
   protected
 
   def project_params_update

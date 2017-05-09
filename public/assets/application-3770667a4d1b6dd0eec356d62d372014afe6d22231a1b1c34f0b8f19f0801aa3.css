@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  margin: 0;
+}
+
+input, button {
+  color: black;
+}
+
+input, textarea {
+  font-size: 25px;
+  color: black;
+}
+
+label {
+  color: black;
+}
+
+.titleField {
+  justify-content: center;
+  width: 50%;
+}
+
+html {
+  background: url('fog-resize.jpg');
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 100vh;
+  opacity: 0.7;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 4px;
+}
+
+.navbar {
+  font-family: 'Raleway';
+  background-color: transparent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.results {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.project {
+  justify-content: center;
+  font-family: 'Raleway';
+  font-size: 36px;
+  background-color: #e6e6e6;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.searchBar {
+  margin-bottom: 20px;
+}
+
+.projectTitle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.projectBody {
+  font-size: .50em;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar:hover {
+  opacity: 1;
+}
+
+.pull-right {
+  padding-right: 20px;
+}
+
+.navbar:hover {
+  opacity: 5.3;
+}
+
+.navbarItem {
+  float: right;
+  color: white;
+}
+
+.field {
+  justify-content: center;
+  text-align: center;
+}
+
+#projectIndexEntry {
+  font-size: 20px;
+  padding: 5px;
+}
+
+#projectIndexBox {
+  width: inherit;
+  background: transparent;
+  text-align: left;
+}
+
+#loginName {
+  float: right;
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navbarItem a {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 20px;
+}
+
+.navbarItem a:visited {
+  color: white;
+}
+
+.logo {
+  padding-left: 20px;
+  height: 56px;
+  width: 67px;
+}
+
+
+
+
+
+/*ACCORDION CODE*/
+.half {
+  float: left;
+  width: 35%;
+  padding: 0 1em;
+}
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+input[type="checkbox"]{
+  visibility: hidden;
+}
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: grey;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+.blue label {
+  background: transparent;
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: transparent;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.blue .tab-content {
+  background: transparent;
+}
+.tab-content p {
+  margin: 1em;
+}
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 100em;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+}
+
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+
+
+/*END ACCORDION STYLING*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

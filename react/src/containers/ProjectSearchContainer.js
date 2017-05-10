@@ -40,6 +40,7 @@ class ProjectSearchContainer extends Component {
           id={result.id}
           title={result.title}
           body={result.description}
+          logo_url={result.logo_url}
         />
       )
     })

@@ -1,5 +1,28 @@
 class ProjectsController < ApplicationController
-  def index
+  def new
+    @project=Project.new
+    @languages=Project::LANGUAGES
+  end
+
+  def create
+    @languages=Project::LANGUAGES
+    @project = Project.new(project_params_update)
+    @project.owner_id = current_user.id
+    if @project.language == 'Ruby'
+      @project.logo_url = 'ruby-logo.png'
+    elsif @project.language == 'Rails'
+      @project.logo_url = 'rails-logo.png'
+    elsif @project.language == 'React'
+      @project.logo_url = 'react-logo-copy.png'
+    else
+      @project.logo_url = 'other-logo.png'
+    end
+
+    if @project.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def show
@@ -39,6 +62,6 @@ class ProjectsController < ApplicationController
   protected
 
   def project_params_update
-    params.require(:project).permit(:title, :description)
+    params.require(:project).permit(:title, :description, :language, :city, :state, :street)
   end
 end

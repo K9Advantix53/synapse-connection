@@ -1,40 +1,40 @@
-<div>
-  <p>
-    <strong>Owner:</strong><%= @project.owner.username %>
-  </p>
-</div>
-
-<div>
+<div class='showProject'>
   <strong>Project:</strong><%= @project.title %>
   <% if user_signed_in? && @current_user.id == @project.owner_id %>
     | <%= link_to 'Edit', edit_project_path(@project) %>
   <% end %>
+  <div>
+    <strong>Owner:</strong><%= @project.owner.username %>
+  </div>
 </div>
 
-<div>
+<div class="space30"></div>
+
+<div class='showProjectRight'>
   <strong>Description:</strong><%= @project.description %>
 </div>
 
-<ul>
+<div class="space30"></div>
+
+<div class='showProject'>
   <strong>Coders:</strong>
   <% @project.users.each do |user| %>
     <li>
       <%= user.username %>
     </li>
   <% end %>
-</ul>
 
-<% if user_signed_in? && Assignment.where(project_id: params[:id], user_id: current_user.id).empty?%>
-  <div id='joinButton'>
-  </div>
-<% end %>
+  <% if user_signed_in? && Assignment.where(project_id: params[:id], user_id: current_user.id).empty?%>
+    <div id='joinButton'>
+    </div>
+  <% end %>
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-<% if user_signed_in? && @current_user.id == @project.owner_id %>
-  <%= link_to "Delete Project", @project, method: :delete%>
-<% end %>
+</div>
+
+<div class="space30"></div>
+
+<div class='deleteProject'>
+  <% if user_signed_in? && @current_user.id == @project.owner_id %>
+    <%= link_to "Delete Project", @project, method: :delete%>
+  <% end %>
+</div>

@@ -19,13 +19,31 @@ angelina = User.create!(first_name: "Angelina", last_name: "Jolie", username: "M
 
 
 
-project1 = Project.create(title: "Calendar App", description: "Build an app that will help our masseurs on track! Should be built with React on Rails", owner_id: george.id)
+project1 = Project.create(title: "Calendar App", description: "Build an app that will help our masseurs on track! Should be built with React on Rails.", owner_id: george.id)
 
-project2 = Project.create(title: "Mobile Note Taking App", description: "Build an app that will allow users to take notes using their finger to write on their mobile devices. Should be built in Swift", owner_id: angelina.id)
+project2 = Project.create(title: "Mobile Note Taking App", description: "Build an app that will allow users to take notes using their finger to write on their mobile devices. Should be built in Swift.", owner_id: angelina.id)
 
 project3 = Project.create(title: "Meetup App", description: "Build an app that will help guitar hobbiests from around your area get in touch for a jam sesh!", owner_id: holly.id)
 
 project4 = Project.create(title: "Cat Enthusiasts App", description: "Build an app that will help cat hobbiests from around your area get in touch for a cat playdate!", owner_id: steve.id)
+
+Project.create(title: 'Postmark App', description: 'Build an app in rails that will email digital postcards to loved ones on holidays!', owner_id: george.id)
+
+Project.create(title: 'Social Media Manager', description: 'Build an app in react that will go over all of your social media profiles and direct you to unprofessional pictures/videos/etc.', owner_id: holly.id)
+
+Project.create(title: 'DnD Campaign Tracker', description: 'Build an app in rails that will keep track of characters, npcs, and world states.', owner_id: steve.id)
+
+Project.create(title: 'Budget Planner', description: 'Build an app that will keep track of monthly expenditures.', owner_id: angelina.id)
+
+Project.create(title: 'Test Prep Tutor App', description: 'Build an app in rails that will outline specific lesson plans after a student takes a diagnostic test.', owner_id: george.id)
+
+Project.create(title: 'Personal Pinboard', description: 'Build an app that will serve as a pinboard for users to post stickies, images, links, etc.', owner_id: holly.id)
+
+Project.create(title: 'NBA Fantasy App', description: 'Build an app with react on rails that will serve as a fantasy basketball app.', owner_id: steve.id)
+
+Project.create(title: 'Gaming Friend Finder', description: 'Build an app in react that will find players of video games based on 10 questions you will answer when you make your account.', owner_id: angelina.id)
+
+Project.create(title: 'Objective News Aggregator', description: 'Build an app that will show headlines from various sources of news from different political leanings.', owner_id: george.id)
 
 
 Assignment.create(project: project1, user: holly)

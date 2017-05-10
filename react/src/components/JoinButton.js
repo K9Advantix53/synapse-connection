@@ -7,7 +7,6 @@ class JoinButton extends Component {
   }
 
   onClick(event) {
-    event.preventDefault()
     let payload = {
       project_id: parseInt(document.URL.replace('http://localhost:3000/projects/', ''))
     }
@@ -17,6 +16,7 @@ class JoinButton extends Component {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     })
+    window.location.reload()
   }
 
   render() {

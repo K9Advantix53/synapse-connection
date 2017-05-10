@@ -14,6 +14,9 @@ class ResultTile extends Component {
         <div className='projectBody'>
           <p>{this.props.body}</p>
         </div>
+        <div className='inter'>
+
+        </div>
       </div>
     )
   }

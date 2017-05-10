@@ -13511,3 +13511,340 @@ Processing by ProjectsController#new as HTML
 Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/" for ::1 at 2017-05-09 20:57:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /Users/georgeli/challenges/week 9/breakable/synapse-connection/app/controllers/application_controller.rb:4)
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 402ms (Views: 383.9ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 20:59:59 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 214ms (Views: 206.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-05-09 21:00:04 -0400
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (2.6ms)
+Completed 200 OK in 108ms (Views: 66.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 21:00:07 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 21:00:11 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 46ms (Views: 40.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 21:00:12 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 21:00:15 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 59ms (Views: 50.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 21:00:28 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (1.0ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-05-09 21:00:45 -0400
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 21:00:47 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 42ms (Views: 37.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 21:00:49 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects" for ::1 at 2017-05-09 21:00:55 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 39.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/projects" for ::1 at 2017-05-09 21:00:55 -0400
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ProjectsController> at /Users/georgeli/challenges/week 9/breakable/synapse-connection/app/controllers/api/v1/projects_controller.rb:2)
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (9.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 91ms (Views: 34.3ms | ActiveRecord: 38.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 21:00:57 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:00 -0400
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:SearchesController> at /Users/georgeli/challenges/week 9/breakable/synapse-connection/app/controllers/api/v1/searches_controller.rb:2)
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>""}
+  [1m[36mProject Load (7.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%%')[0m
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:00 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"a"}
+  [1m[36mProject Load (1.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%a%')[0m
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:01 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"ap"}
+  [1m[36mProject Load (1.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%ap%')[0m
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:01 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"app"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%app%')[0m
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:02 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"ap"}
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%ap%')[0m
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:02 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"a"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%a%')[0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:02 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>""}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%%')[0m
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:03 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"s"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%s%')[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:03 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>""}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%%')[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:03 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"e"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%e%')[0m
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:04 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"ec"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%ec%')[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:04 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"ech"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%ech%')[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:04 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"echa"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%echa%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:04 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"ech"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%ech%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:04 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"ec"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%ec%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:04 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"e"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%e%')[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:05 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>""}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%%')[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:05 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"p"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%p%')[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:05 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"po"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%po%')[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:06 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"pow"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%pow%')[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:06 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"po"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%po%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:06 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"p"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%p%')[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:06 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>""}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%%')[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:07 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"w"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%w%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:07 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"we"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%we%')[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:07 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"w"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%w%')[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:08 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>""}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%%')[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:08 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"d"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%d%')[0m
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:08 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"dv"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%dv%')[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/searches" for ::1 at 2017-05-09 21:01:08 -0400
+Processing by Api::V1::SearchesController#create as */*
+  Parameters: {"search"=>"d"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE (title ilike '%d%')[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+

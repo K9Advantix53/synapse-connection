@@ -66,7 +66,7 @@ class ProjectNewForm extends Component {
                 name="project-description"
               />
               </div>
-              <div className="button-group">
+              <div className="field">
                 <button className="button" onClick={this.onClear}>Clear</button>
                 <input className="button" type="submit" onClick={this.handleSubmit} value="Submit" />
               </div>

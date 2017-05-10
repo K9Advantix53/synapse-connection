@@ -1,6 +1,6 @@
 <div id='profilePage'>
   <p id='profileUsername'>
-    <%= @current_user.username %>
+    <%= @current_user.username %> | <%= link_to 'Edit Profile', edit_user_registration_path %>
   </p>
   <p id='profileFullName'>
     <%= @current_user.first_name %>

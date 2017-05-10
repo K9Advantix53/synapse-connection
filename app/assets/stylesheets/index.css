@@ -74,7 +74,7 @@ li {
 
 .indexButtons:hover {
   font-family: "Roboto", sans-serif;
-  width: 100%;
+  width: 20%;
   background: #2D373C;
   color: white;
 }

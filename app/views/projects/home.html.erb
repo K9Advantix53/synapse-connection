@@ -1,5 +1,16 @@
-<%= link_to 'All Projects', projects_path %>
-<%= link_to 'Create a Project', new_project_path %>
-<div id='projectSearch'>
+<div class='indexBar'>
 
+  <div class='indexBarItem'>
+      <%= link_to 'All Projects', projects_path, class: 'indexButtons' %>
+
+      <%= link_to 'Create a Project', new_project_path, class: 'indexButtons' %>
+
+      <%= link_to 'Users Near You', root_path, class: 'indexButtons' %>
+      
+      <%= link_to 'Users Near You', root_path, class: 'indexButtons' %>
+  </div>
+</div>
+
+<div class="SearchBar">
+  <div id='projectSearch'></div>
 </div>

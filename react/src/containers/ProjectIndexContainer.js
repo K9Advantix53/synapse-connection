@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import Project from '../components/Project'
-import TitleField from '../components/TitleField'
-import DescriptionField from '../components/DescriptionField'
 import ResultTile from '../components/ResultTile'
 
 class ProjectIndexContainer extends Component {
@@ -28,6 +25,7 @@ class ProjectIndexContainer extends Component {
           id={project.id}
           title={project.title}
           body={project.description}
+          logo_url={project.logo_url}
         />
       )
     })

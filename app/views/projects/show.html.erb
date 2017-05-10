@@ -33,6 +33,29 @@
 
 <div class="space30"></div>
 
+<div class='center'>
+  <h3>Preferred Meeting Location:</h3>
+  <p> <%= @project.street %>, <%= @project.city %> <%= @project.state %></p>
+  <div id="map"></div>
+</div>
+
+<script>
+  function initMap() {
+    var uluru = {lat: <%= @project.latitude %>, lng: <%= @project.longitude %>};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwKpno8xQdD_rAR9evmxaxmtuGhx9CC0s&callback=initMap">
+</script>
+
 <div class='deleteProject'>
   <% if user_signed_in? && @current_user.id == @project.owner_id %>
     <%= link_to "Delete Project", @project, method: :delete%>

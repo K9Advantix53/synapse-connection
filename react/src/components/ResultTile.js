@@ -6,17 +6,13 @@ class ResultTile extends Component {
   }
 
   render() {
+    let url = this.props.logo_url;
     return(
       <div className='project'>
         <div className='projectTitle'>
           <a href={`projects/${this.props.id}`}>{this.props.title}</a>
         </div>
-        <div className='projectBody'>
-          <p>{this.props.body}</p>
-        </div>
-        <div className='inter'>
-
-        </div>
+        <img src={assetHelper[url]} className='projectLogo'></img>
       </div>
     )
   }

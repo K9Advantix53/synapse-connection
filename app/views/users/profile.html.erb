@@ -1,39 +1,27 @@
-<div id='profilePage'>
-  <p id='profileUsername'>
+<div class='profileInfo'>
+  <p>
     <%= @current_user.username %> | <%= link_to 'Edit Profile', edit_user_registration_path %>
   </p>
   <p id='profileFullName'>
     <%= @current_user.first_name %>
     <%= @current_user.last_name %>
   </p>
-</br>
+</div>
 
-<div class="half">
-  <div class="tab">
-    <input id="tab-one" type="checkbox" name="tabs">
-    <label for="tab-one">Owned Projects</label>
-    <div class="tab-content">
-      <ul>
-        <% @current_user.owned_projects.each do |project| %>
-          <li>
-            <%= link_to project.title, project_path(project) %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
 
-  <div class="tab">
-    <input id="tab-two" type="checkbox" name="tabs">
-    <label for="tab-two">Coding Projects</label>
-    <div class="tab-content">
-      <ul>
-        <% @current_user.projects.each do |project| %>
-          <li>
-            <%= link_to project.title, project_path(project) %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
+<div class='profileInfo' id='smallerFont'>
+  <h2>Owned Projects</h2>
+    <% @current_user.owned_projects.each do |project| %>
+      <li>
+        <%= link_to project.title, project_path(project) %>
+      </li>
+    <% end %>
+
+
+  <h2>Open Projects</h2>
+    <% @current_user.projects.each do |project| %>
+      <li>
+        <%= link_to project.title, project_path(project) %>
+      </li>
+    <% end %>
 </div>

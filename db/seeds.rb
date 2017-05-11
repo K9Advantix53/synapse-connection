@@ -8,6 +8,7 @@
 User.destroy_all
 Project.destroy_all
 Assignment.destroy_all
+Chatroom.destroy_all
 
 george = User.create!(first_name: "George", last_name: "Li", username: "K9Advantix", email: "george53@bu.edu", password: "hahacows")
 

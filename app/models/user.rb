@@ -13,6 +13,9 @@ class User < ApplicationRecord
   has_many :projects, through: :assignments
   has_many :owned_projects, class_name: "Project", foreign_key: "owner_id"
 
+  has_many :messages
+  has_many :chatrooms, through: :messages
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 end

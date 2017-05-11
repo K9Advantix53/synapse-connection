@@ -1,3 +1,16 @@
+<div class='indexBar'>
+
+  <div class='indexBarItem'>
+      <%= link_to 'All Projects', projects_path, class: 'indexButtons' %>
+
+      <% if user_signed_in? %>
+        <%= link_to 'Create a Project', new_project_path, class: 'indexButtons' %>
+      <% end %>
+
+      <%= link_to 'Project Space', root_path, class: 'indexButtons' %>
+  </div>
+</div>
+
 <div class='profileInfo'>
   <p>
     <%= @current_user.username %> | <%= link_to 'Edit Profile', edit_user_registration_path %>

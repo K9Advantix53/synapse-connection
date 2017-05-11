@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 * {
   margin: 0;
+}
+
+input[type=text] {
+  width: 50%;
+}
+
+textarea {
+  width: 50%;
+  min-height: 20%;
 }
 
 input, button {
@@ -18,7 +27,7 @@ label {
 }
 
 html {
-  background: url('fog-resize.jpg');
+  background: url('fog-resize-logo.png');
   background-size: cover;
   background-repeat: repeat-y;
   background-attachment: fixed;
@@ -40,7 +49,7 @@ li {
 }
 
 .navbar {
-  font-family: 'Raleway';
+  font-family: 'Oswald';
   background-color: transparent;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -81,10 +90,6 @@ li {
   color: white;
 }
 
-.SearchBar {
-  text-align: center;
-}
-
 .deleteProject {
   display: block;
   float: left;
@@ -93,7 +98,7 @@ li {
   margin-right: 1%;
   margin-bottom: 1%;
   text-align: center;
-  font-family: 'Raleway';
+  font-family: 'Oswald';
   font-size: 36px;
   border-radius: 10px;
   transition: 700ms;
@@ -111,7 +116,7 @@ li {
   float: left;
   width: 70%;
   justify-content: center;
-  font-family: 'Raleway';
+  font-family: 'Oswald';
   font-size: 36px;
   background-color: #e6e6e6;
   margin-left: 1%;
@@ -127,7 +132,7 @@ li {
   float: right;
   width: 70%;
   justify-content: center;
-  font-family: 'Raleway';
+  font-family: 'Oswald';
   font-size: 36px;
   background-color: #e6e6e6;
   margin-left: 1%;
@@ -163,17 +168,15 @@ li {
 .project {
   display: block;
   float: left;
-  min-width: 31%;
-  max-width: 31%;
+  min-width: 25%;
+  max-width: 25%;
   justify-content: center;
-  font-family: 'Raleway';
+  font-family: 'Oswald';
   font-size: 26px;
   background-color: #e6e6e6;
-  margin-left: 1%;
-  margin-right: 1%;
-  margin-bottom: 1%;
-  border: 2px solid black;
-  border-radius: 10px;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 6%;
   min-height: 200px;
   transition: 700ms;
 }
@@ -192,10 +195,10 @@ li {
   background: #414042;
 }
 
-
-
 .searchBar {
   margin-bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .projectTitle {
@@ -219,7 +222,7 @@ li {
 
 .profileInfo {
   text-align: center;
-  font-family: 'Raleway';
+  font-family: 'Oswald';
   font-size: 36px;
   background-color: #e6e6e6;
   margin-left: 1%;
@@ -270,6 +273,7 @@ li {
 #loginName {
   float: right;
   padding-right: 20px;
+  font-size: 30px;
 }
 
 a {

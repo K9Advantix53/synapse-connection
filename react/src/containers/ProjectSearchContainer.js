@@ -50,6 +50,13 @@ class ProjectSearchContainer extends Component {
           search={this.state.search}
           onChange={this.handleSearchChange}
         />
+
+        <div className='center'>
+          <div id='companyName'>
+            SYNAPSE
+          </div>
+        </div>
+
         <div className='results'>
           {search_results}
         </div>

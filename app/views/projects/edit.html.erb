@@ -11,6 +11,10 @@
     <%= f.text_area :description %>
   </div>
 
+  <div id='dropDown'>
+    <%= f.select :language, @languages %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Update Project"%>
   </div>

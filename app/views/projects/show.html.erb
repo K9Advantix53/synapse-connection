@@ -6,7 +6,17 @@
   <div>
     <strong>Owner:</strong><%= @project.owner.username %>
   </div>
+  <div>
+    <%= link_to 'Chatroom', chatroom_path(@project) %>
+  </div>
+  <div class='deleteProject'>
+    <% if user_signed_in? && @current_user.id == @project.owner_id %>
+      <%= link_to "Delete Project", @project, method: :delete%>
+    <% end %>
+  </div>
 </div>
+
+
 
 <div class="space30"></div>
 
@@ -34,8 +44,8 @@
 <div class="space30"></div>
 
 <div class='center'>
-  <h3>Preferred Meeting Location:</h3>
-  <p> <%= @project.street %>, <%= @project.city %> <%= @project.state %></p>
+  <h3 class='whiteText'>Preferred Meeting Location:</h3>
+  <p class='whiteText'> <%= @project.street %>, <%= @project.city %> <%= @project.state %></p>
   <div id="map"></div>
 </div>
 
@@ -55,9 +65,3 @@
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwKpno8xQdD_rAR9evmxaxmtuGhx9CC0s&callback=initMap">
 </script>
-
-<div class='deleteProject'>
-  <% if user_signed_in? && @current_user.id == @project.owner_id %>
-    <%= link_to "Delete Project", @project, method: :delete%>
-  <% end %>
-</div>

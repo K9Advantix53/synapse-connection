@@ -18,7 +18,16 @@ class ProjectsController < ApplicationController
       @project.logo_url = 'other-logo.png'
     end
 
+    @project.save
+
     if @project.save
+      chatroom=Chatroom.new
+      chatroom.topic = @project.title
+      if chatroom.save
+        flash[:success] = 'your project has been saved and a project chatroom has been created'
+        chatroom.slug = @project.id.to_s
+        chatroom.save
+      end
       redirect_to root_path
     else
       render :new
@@ -27,15 +36,24 @@ class ProjectsController < ApplicationController
 
   def show
     @project=Project.find(params[:id])
+    @chatroom=Chatroom.find_by(slug: @project.id)
     @current_user=current_user
   end
 
   def edit
     @project=Project.find(params[:id])
+    @languages=Project::LANGUAGES
     # @project_coders = []
     # @project.users.each do |user|
     #   @project_coders << user.username
     # end
+  end
+
+  def update
+    @project=Project.find(params[:id])
+    chatroom=Chatroom.find_by(slug: @project.id)
+    chatroom.topic=@project.title
+    binding.pry
   end
 
   def update
@@ -62,6 +80,6 @@ class ProjectsController < ApplicationController
   protected
 
   def project_params_update
-    params.require(:project).permit(:title, :description, :language, :city, :state, :street)
+    params.require(:project).permit(:title, :description, :language, :city, :state, :street, :longitude, :latitude)
   end
 end

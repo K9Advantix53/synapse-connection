@@ -9,6 +9,7 @@ User.destroy_all
 Project.destroy_all
 Assignment.destroy_all
 Chatroom.destroy_all
+Message.destroy_all
 
 george = User.create!(first_name: "George", last_name: "Li", username: "K9Advantix", email: "george53@bu.edu", password: "hahacows")
 
@@ -28,24 +29,37 @@ project3 = Project.create(title: "Meetup App", description: "Build an app that w
 
 project4 = Project.create(title: "Cat Enthusiasts App", description: "Build an app that will help cat hobbiests from around your area get in touch for a cat playdate!", owner_id: steve.id, language: 'Ruby', logo_url: 'ruby-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
-Project.create(title: 'Postmark App', description: 'Build an app in rails that will email digital postcards to loved ones on holidays!', owner_id: george.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project5 = Project.create(title: 'Postmark App', description: 'Build an app in rails that will email digital postcards to loved ones on holidays!', owner_id: george.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
-Project.create(title: 'Social Media Manager', description: 'Build an app in react that will go over all of your social media profiles and direct you to unprofessional pictures/videos/etc.', owner_id: holly.id, language: 'React', logo_url: 'react-logo-copy.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project6 = Project.create(title: 'Social Media Manager', description: 'Build an app in react that will go over all of your social media profiles and direct you to unprofessional pictures/videos/etc.', owner_id: holly.id, language: 'React', logo_url: 'react-logo-copy.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
-Project.create(title: 'DnD Campaign Tracker', description: 'Build an app in rails that will keep track of characters, npcs, and world states.', owner_id: steve.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project7 = Project.create(title: 'DnD Campaign Tracker', description: 'Build an app in rails that will keep track of characters, npcs, and world states.', owner_id: steve.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
-Project.create(title: 'Budget Planner', description: 'Build an app that will keep track of monthly expenditures.', owner_id: angelina.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project8 = Project.create(title: 'Budget Planner', description: 'Build an app that will keep track of monthly expenditures.', owner_id: angelina.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
-Project.create(title: 'Test Prep Tutor App', description: 'Build an app in rails that will outline specific lesson plans after a student takes a diagnostic test.', owner_id: george.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project9 = Project.create(title: 'Test Prep Tutor App', description: 'Build an app in rails that will outline specific lesson plans after a student takes a diagnostic test.', owner_id: george.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
-Project.create(title: 'Personal Pinboard', description: 'Build an app that will serve as a pinboard for users to post stickies, images, links, etc.', owner_id: holly.id, language: "Ruby", logo_url: 'ruby-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project10 = Project.create(title: 'Personal Pinboard', description: 'Build an app that will serve as a pinboard for users to post stickies, images, links, etc.', owner_id: holly.id, language: "Ruby", logo_url: 'ruby-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
-Project.create(title: 'NBA Fantasy App', description: 'Build an app with react on rails that will serve as a fantasy basketball app.', owner_id: steve.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project11 = Project.create(title: 'NBA Fantasy App', description: 'Build an app with react on rails that will serve as a fantasy basketball app.', owner_id: steve.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
-Project.create(title: 'Gaming Friend Finder', description: 'Build an app in react that will find players of video games based on 10 questions you will answer when you make your account.', owner_id: angelina.id, language: 'React', logo_url: 'react-logo-copy.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project12 = Project.create(title: 'Gaming Friend Finder', description: 'Build an app in react that will find players of video games based on 10 questions you will answer when you make your account.', owner_id: angelina.id, language: 'React', logo_url: 'react-logo-copy.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
-Project.create(title: 'Objective News Aggregator', description: 'Build an app that will show headlines from various sources of news from different political leanings.', owner_id: george.id, language: 'React', logo_url: 'react-logo-copy.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project13 = Project.create(title: 'Objective News Aggregator', description: 'Build an app that will show headlines from various sources of news from different political leanings.', owner_id: george.id, language: 'React', logo_url: 'react-logo-copy.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
+Chatroom.create(topic: project1.title, slug: project1.id)
+Chatroom.create(topic: project2.title, slug: project2.id)
+Chatroom.create(topic: project3.title, slug: project3.id)
+Chatroom.create(topic: project4.title, slug: project4.id)
+Chatroom.create(topic: project5.title, slug: project5.id)
+Chatroom.create(topic: project6.title, slug: project6.id)
+Chatroom.create(topic: project7.title, slug: project7.id)
+Chatroom.create(topic: project8.title, slug: project8.id)
+Chatroom.create(topic: project9.title, slug: project9.id)
+Chatroom.create(topic: project10.title, slug: project10.id)
+Chatroom.create(topic: project11.title, slug: project11.id)
+Chatroom.create(topic: project12.title, slug: project12.id)
+Chatroom.create(topic: project13.title, slug: project13.id)
 
 Assignment.create(project: project1, user: holly)
 Assignment.create(project: project1, user: steve)

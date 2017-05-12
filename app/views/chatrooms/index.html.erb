@@ -1,17 +1,22 @@
 <div class="row col-md-8 col-md-offset-2" id="chatroom-title">
-  <h1>Chatrooms</h1>
+  <h1 class='center' id='chatrooms'>PROJECT CHATROOMS</h1>
 </div>
 
-<div class="row col-md-8 col-md-offset-2" id="chatrooms">
-  <%= render partial: 'chatroom_form', locals: {chatroom: @chatroom} %>
-<div id="chatroom-errors">
-
-  </div>
-    <ul id="chatroom-index">
-  <% if @chatrooms.any? %>
-      <%= render @chatrooms%>
-  <%else %>
-    </ul>
-    <p>Be the first one to make a chatroom!</p>
-  <% end %>
+<div class='center' id='chatList'>
+  <h3>Owned Projects</h3>
+  <ul id="chatroom-index">
+    <% if @owned_projects.any? %>
+      <% @owned_projects.each do |project| %>
+        <% @chatrooms.each do |room| %>
+          <% if room.slug.to_i == project.id %>
+            <div id='chatRoom'>
+              <%= link_to project.title, chatroom_path(project) %>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    <%else %>
+  </ul>
+      <p>You Do Not Own Any Projects</p>
+    <% end %>
 </div>

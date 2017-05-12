@@ -2,6 +2,8 @@ class ChatroomsController < ApplicationController
   def index
     @chatroom=Chatroom.new
     @chatrooms=Chatroom.all
+    @owned_projects=current_user.owned_projects
+    @coding_projects=current_user.projects
   end
 
   def new
@@ -11,27 +13,27 @@ class ChatroomsController < ApplicationController
     @chatroom=Chatroom.new
   end
 
-  def create
-    @chatroom = Chatroom.new(chatroom_params)
-    if Chatroom.all.empty?
-      last_number = 0
-    else
-      last_number=Chatroom.last.id
-    end
-    @chatroom.slug = last_number + 1
-    if @chatroom.save
-      respond_to do |format|
-        format.html { redirect_to @chatroom }
-        format.js
-      end
-    else
-      respond_to do |format|
-        flash[:notice] = {error: ["a chatroom with this topic already exists"]}
-        format.html { redirect_to new_chatroom_path }
-        format.js { render template: 'chatrooms/chatroom_error.js.erb'}
-      end
-    end
-  end
+  # def create
+  #   @chatroom = Chatroom.new(chatroom_params)
+  #   if Chatroom.all.empty?
+  #     last_number = 0
+  #   else
+  #     last_number=Chatroom.last.id
+  #   end
+  #   @chatroom.slug = last_number + 1
+  #   if @chatroom.save
+  #     respond_to do |format|
+  #       format.html { redirect_to @chatroom }
+  #       format.js
+  #     end
+  #   else
+  #     respond_to do |format|
+  #       flash[:notice] = {error: ["a chatroom with this topic already exists"]}
+  #       format.html { redirect_to new_chatroom_path }
+  #       format.js { render template: 'chatrooms/chatroom_error.js.erb'}
+  #     end
+  #   end
+  # end
 
   def edit
     @chatroom = Chatroom.find_by(slug: params[:slug])

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 
 * {
   margin: 0;
@@ -27,12 +29,71 @@ label {
 }
 
 html {
-  background: url('fog-resize-logo.png');
+  background: url('dark-fog.jpg');
   background-size: cover;
   background-repeat: repeat-y;
   background-attachment: fixed;
   height: 100vh;
   opacity: 0.7;
+}
+
+.whiteText {
+  color: white;
+  font-family: 'Josefin Sans';
+  font-size: 30px;
+}
+
+#companyName {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 140px;
+  color: white;
+}
+
+#chatroom-index {
+  width: 50%;
+  background: #FBF8F8;
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+
+#chatList {
+  width: 50%;
+  background: #FBF8F8;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#chatRoom {
+  background-color: #FBF8F8;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 15%;
+  align-self: center;
+}
+
+#chatrooms {
+  color: white;
+  font-family: 'Josefin Sans';
+}
+
+.chatWindow {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.message {
+  border: 1px solid black;
+  padding: 20px;
+  background-color: white;
+}
+
+.messageTime {
+  float: right;
 }
 
 ul {
@@ -46,17 +107,6 @@ li {
 
 .space30 {
   padding-top: 225px;
-}
-
-.navbar {
-  font-family: 'Oswald';
-  background-color: transparent;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  width: 100%;
-  opacity: 0.7;
-  transition: 0.3s;
 }
 
 .results {
@@ -73,18 +123,19 @@ li {
 }
 
 .indexButtons {
-  font-family: "Roboto", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: 20px;
   border-bottom: 1px double #2D373C;
   border-right: 1px double #2D373C;
   margin: 5px;
   padding: 5px;
   width: 200px;
+  color: black;
   transition: 700ms;
 }
 
 .indexButtons:hover {
-  font-family: "Roboto", sans-serif;
+  font-family: "oswald", sans-serif;
   width: 20%;
   background: #2D373C;
   color: white;
@@ -92,7 +143,7 @@ li {
 
 .deleteProject {
   display: block;
-  float: left;
+  float: right;
   width: 31%;
   margin-left: 1%;
   margin-right: 1%;
@@ -106,9 +157,10 @@ li {
 
 .deleteProject:hover {
   background: red;
+}
+
+.deleteProject a:hover {
   color: white;
-  text-shadow: 1px black;
-  border: 1px solid black;
 }
 
 .showProject {
@@ -146,8 +198,8 @@ li {
 #map {
   display: block;
   margin: auto;
-  width: 20em;
-  height: 20em;
+  width: 40em;
+  height: 40em;
 }
 
 .center {
@@ -173,7 +225,7 @@ li {
   justify-content: center;
   font-family: 'Oswald';
   font-size: 26px;
-  background-color: #e6e6e6;
+  background-color: #FBF8F8;
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 6%;
@@ -196,6 +248,7 @@ li {
 }
 
 .searchBar {
+  margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
   vertical-align: middle;
@@ -220,39 +273,16 @@ li {
 }
 
 
-.profileInfo {
-  text-align: center;
-  font-family: 'Oswald';
-  font-size: 36px;
-  background-color: #e6e6e6;
-  margin-left: 1%;
-  margin-right: 1%;
-  margin-bottom: 1%;
-  border: 2px solid black;
-  border-radius: 10px;
-  min-height: 200px;
-}
 
-#smallerFont {
-  font-size: .8em;
-}
 
-.navbar:hover {
-  opacity: 1;
-}
+
+
+
 
 .pull-right {
   padding-right: 20px;
 }
 
-.navbar:hover {
-  opacity: 5.3;
-}
-
-.navbarItem {
-  float: right;
-  color: white;
-}
 
 .field {
   justify-content: center;
@@ -273,7 +303,7 @@ li {
 #loginName {
   float: right;
   padding-right: 20px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 a {
@@ -281,26 +311,6 @@ a {
   color: black;
   cursor: pointer;
 }
-
-.navbarItem a {
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 20px;
-}
-
-.navbarItem a:visited {
-  color: white;
-}
-
-.logo {
-  padding-left: 20px;
-  height: 56px;
-  width: 67px;
-}
-
-
-
-
 
 /*ACCORDION CODE*/
 .half {

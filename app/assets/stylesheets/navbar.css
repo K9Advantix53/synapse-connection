@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.navbar {
+  font-family: 'Oswald';
+  background-color: transparent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.navbar:hover {
+  opacity: 5.3;
+}
+
+.navbarItem {
+  font-family: 'Oswald';
+  float: right;
+  color: white;
+}
+
+.navbarItem a {
+  color: white;
+  font-size: 20px;
+}
+
+.navbarItem a:visited {
+  color: white;
+}
+
+.logo {
+  padding-left: 20px;
+  height: 56px;
+  width: 67px;
+}

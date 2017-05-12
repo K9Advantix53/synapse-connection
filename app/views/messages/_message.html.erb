@@ -1,1 +1,1 @@
-<p><strong><%=message.user.username%>:</strong> <%=message.content%></p>
+<p class='message'><strong><%=message.user.username%>:</strong> <%=message.content%><span class='messageTime'> <%= message.created_at.strftime("%k:%M %b %d, %Y") %></span></p>

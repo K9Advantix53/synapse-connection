@@ -10,7 +10,7 @@ class ProjectIndexContainer extends Component {
   }
 
   componentWillMount() {
-    fetch('http://localhost:3000/api/v1/projects')
+    fetch('/api/v1/projects')
       .then(response => response.json())
       .then(body => {
         this.setState({ projects: body })

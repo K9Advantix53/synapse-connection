@@ -18,16 +18,16 @@
 .navbarItem {
   font-family: 'Josefin Sans';
   float: right;
-  color: white;
+  color: black;
 }
 
 .navbarItem a {
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
 .navbarItem a:visited {
-  color: white;
+  color: black;
 }
 
 .logo {

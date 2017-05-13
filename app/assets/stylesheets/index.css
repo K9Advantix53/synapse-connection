@@ -33,11 +33,10 @@ input, textarea {
 }
 
 html {
-  background: url('dark-fog.jpg');
+  background: url('plane-long.jpg');
   background-size: cover;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
   opacity: 0.7;
 }
 
@@ -86,6 +85,7 @@ html {
 }
 
 #chatRoom:hover {
+  color: white;
   background: #414042;
 }
 
@@ -342,7 +342,7 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 

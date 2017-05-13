@@ -13,6 +13,10 @@
   min-height: 200px;
 }
 
+#editProfileButton {
+  color: black;
+}
+
 #editProfileButton:hover {
   color: white;
   background: #414042;

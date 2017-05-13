@@ -46,8 +46,8 @@ en:
       updated: "Your account has been updated successfully."
     sessions:
       signed_in: "Signed In Successfully."
-      signed_out: "Signed Out Successfully."
-      already_signed_out: "Signed Out Successfully."
+      signed_out: "See You Next Time!"
+      already_signed_out: "See You Next Time!"
     unlocks:
       send_instructions: "You Will Receive an Email with instructions for how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."

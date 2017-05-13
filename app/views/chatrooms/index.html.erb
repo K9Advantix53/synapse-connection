@@ -20,3 +20,22 @@
       <p>You Do Not Own Any Projects</p>
     <% end %>
 </div>
+
+<div class='center' id='chatList'>
+  <h3>Coding Projects</h3>
+  <ul id="chatroom-index">
+    <% if @coding_projects.any? %>
+      <% @chatrooms.each do |room| %>
+        <% @coding_projects.each do |project| %>
+          <% if room.slug.to_i == project.id %>
+            <div id='chatRoom'>
+              <%= link_to project.title, chatroom_path(project) %>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    <%else %>
+  </ul>
+      <p>You Are Not Woring on any Projects</p>
+    <% end %>
+</div>

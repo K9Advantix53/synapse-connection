@@ -4,7 +4,9 @@
     | <%= link_to 'Edit', edit_project_path(@project) %>
   <% end %>
   <div>
-    <strong>Owner:</strong><%= @project.owner.username %>
+    <strong>Owner:</strong><%= @project.owner.username %> <% if @project.owner.username == current_user.username %>
+    | <%= link_to 'Profile', profile_path %>
+    <% end %>
   </div>
   <div>
     <%= link_to 'Chatroom', chatroom_path(@project) %>
@@ -45,7 +47,7 @@
 
 <div class='center'>
   <h3 class='whiteText'>Preferred Meeting Location:</h3>
-  <p class='whiteText'> <%= @project.street %>, <%= @project.city %> <%= @project.state %></p>
+  <p class='address'> <%= @project.street %>, <%= @project.city %> <%= @project.state %></p>
   <div id="map"></div>
 </div>
 

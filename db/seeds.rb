@@ -21,7 +21,7 @@ angelina = User.create!(first_name: "Angelina", last_name: "Jolie", username: "M
 
 
 
-project1 = Project.create(title: "Calendar App", description: "Build an app that will help our masseurs on track! Should be built with React on Rails.", owner_id: george.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
+project1 = Project.create(title: "YouPipe", description: "", owner_id: george.id, language: 'Rails', logo_url: 'rails-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 
 project2 = Project.create(title: "Mobile Note Taking App", description: "Build an app that will allow users to take notes using their finger to write on their mobile devices. Should be built in Swift.", owner_id: angelina.id, language: 'Other', logo_url: 'other-logo.png', street: '10 Greylock Rd.', city: 'Allston', state: 'MA')
 

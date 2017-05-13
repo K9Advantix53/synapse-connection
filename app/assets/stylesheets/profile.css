@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 .profileInfo {
   text-align: center;
-  font-family: 'Oswald';
+  font-family: 'Josefin Sans';
   font-size: 36px;
   background-color: #e6e6e6;
   margin-left: 1%;
@@ -13,10 +13,16 @@
   min-height: 200px;
 }
 
-#profileFullName {
+#editProfileButton:hover {
+  color: white;
+  background: #414042;
+}
 
+#profileFullName {
+  background-color: #414042;
+  color: white;
 }
 
 #smallerFont {
-  font-size: .8em;
+  font-size: 1.9em;
 }

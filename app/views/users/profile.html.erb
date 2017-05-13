@@ -7,13 +7,13 @@
         <%= link_to 'Create a Project', new_project_path, class: 'indexButtons' %>
       <% end %>
 
-      <%= link_to 'Project Space', chatrooms_path, class: 'indexButtons' %>
+      <%= link_to 'Project Chatrooms', chatrooms_path, class: 'indexButtons' %>
   </div>
 </div>
 
-<div class='profileInfo'>
+<div class='profileInfo' id='difColorStripe'>
   <p>
-    <%= @current_user.username %> | <%= link_to 'Edit Profile', edit_user_registration_path %>
+    <%= @current_user.username %> | <%= link_to 'Edit Profile', edit_user_registration_path, id: 'editProfileButton' %>
   </p>
   <p id='profileFullName'>
     <%= @current_user.first_name %>
@@ -31,7 +31,7 @@
     <% end %>
 
 
-  <h2>Open Projects</h2>
+  <h2>Coding Projects</h2>
     <% @current_user.projects.each do |project| %>
       <li>
         <%= link_to project.title, project_path(project) %>

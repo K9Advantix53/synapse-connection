@@ -54717,3 +54717,18 @@ Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 17:29:54 -0400
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 MessagesChannel is transmitting the subscription confirmation
 MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 17:32:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /Users/georgeli/challenges/week 9/breakable/synapse-connection/app/controllers/application_controller.rb:4)
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_flash.html.erb (5.6ms)
+Completed 200 OK in 837ms (Views: 831.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2017-05-13 17:32:20 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 17:32:20 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages

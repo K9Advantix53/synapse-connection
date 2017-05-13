@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   resources :projects
 
+  get '/about', to: 'projects#about'
+
   get '/profile', to: 'users#profile'
 
   get '/search', to: 'projects#search'

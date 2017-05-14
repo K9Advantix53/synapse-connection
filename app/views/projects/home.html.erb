@@ -1,22 +1,56 @@
+<div class="navbar">
+  <%= link_to image_tag("synapse-logo.png", class: "logo"), root_path %>
 
+  <% if user_signed_in? %>
+  <div class="navbarItem">
 
+    <div class='login-state' id='loginName'><strong><%= link_to current_user.username, profile_path %></strong></div>
 
-<div className='center'>
-  <div id='companyName'>
-    <%= link_to 'SYNAPSE', projects_path %>
+    </br>
+
+    <span class="pull-right">
+
+      <span id='logout'><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></span>
+
+    </span>
+
   </div>
-  <div id='aboutPage'>
-    <div>
-      The Connection Between Businesses and Developers
-    </div>
-    <div class='zero-opacity homeButton'>
-      <%= link_to 'About', about_path %>
-      <% if !user_signed_in? %>
-        || <%= link_to 'Login', new_user_session_path, class: 'homeButton' %>
-      <% else %>
-        || <%= link_to 'Projects', projects_path, class: 'homeButton' %>
-        || <%= link_to 'Search', search_path, class: 'homeButton' %>
-      <% end %>
-    </div>
+  <% else %>
+  <div class="navbarItem">
+
+    <%= link_to "Register", new_user_registration_path, :class => 'navbar-link'  %> |
+
+    <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> | <%= link_to 'Home', root_path %>
+
   </div>
+  <% end %>
+
 </div>
+
+
+
+  <div>
+    <div id='companyName'>
+      <%= link_to 'SYNAPSE', projects_path %>
+    </div>
+    <div id='aboutPage'>
+      <div>
+        The Connection Between Businesses and Developers
+      </div>
+      <div class='zero-opacity homeButton'>
+        <%= link_to 'About', about_path %>
+        <% if !user_signed_in? %>
+          || <%= link_to 'Login', new_user_session_path, class: 'homeButton' %>
+        <% else %>
+          || <%= link_to 'Projects', projects_path, class: 'homeButton' %>
+          || <%= link_to 'Search', search_path, class: 'homeButton' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class='splashPageParallax2'>  
+  </div>

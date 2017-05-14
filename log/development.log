@@ -55875,3 +55875,754 @@ Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 19:23:21 -0400
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 MessagesChannel is transmitting the subscription confirmation
 MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 19:53:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (25.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /Users/georgeli/challenges/week 9/breakable/synapse-connection/app/controllers/application_controller.rb:4)
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (78.0ms)
+  Rendered layouts/_flash.html.erb (1.3ms)
+Completed 200 OK in 1327ms (Views: 1277.4ms | ActiveRecord: 43.5ms)
+
+
+Started GET "/cable" for ::1 at 2017-05-13 19:53:56 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 19:53:56 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/projects" for ::1 at 2017-05-13 19:54:03 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 205ms (Views: 198.5ms | ActiveRecord: 4.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 19:54:03 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 19:54:03 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 19:54:03 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/api/v1/projects" for ::1 at 2017-05-13 19:54:03 -0400
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ProjectsController> at /Users/georgeli/challenges/week 9/breakable/synapse-connection/app/controllers/api/v1/projects_controller.rb:2)
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (32.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 109ms (Views: 27.3ms | ActiveRecord: 60.1ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 19:54:06 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 19:54:06 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 19:54:06 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 20:41:26 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (120.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (327.7ms)
+  Rendered layouts/_flash.html.erb (5.0ms)
+Completed 200 OK in 596ms (Views: 446.6ms | ActiveRecord: 120.9ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 20:41:27 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 20:41:28 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 20:41:28 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:08:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (18.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:08:39 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:09:54 -0400
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /Users/georgeli/challenges/week 9/breakable/synapse-connection/app/controllers/application_controller.rb:4)
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (145.5ms)
+  Rendered layouts/_flash.html.erb (1.2ms)
+Completed 200 OK in 1119ms (Views: 998.8ms | ActiveRecord: 83.9ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:09:55 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:09:56 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:09:56 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:10:43 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (32.6ms)
+  Rendered layouts/_flash.html.erb (0.8ms)
+Completed 200 OK in 122ms (Views: 115.5ms | ActiveRecord: 3.5ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:10:43 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:10:44 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:10:44 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/projects" for ::1 at 2017-05-13 21:10:52 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.9ms)
+Completed 200 OK in 54ms (Views: 49.5ms | ActiveRecord: 1.5ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:10:52 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:10:52 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:10:52 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/api/v1/projects" for ::1 at 2017-05-13 21:10:53 -0400
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ProjectsController> at /Users/georgeli/challenges/week 9/breakable/synapse-connection/app/controllers/api/v1/projects_controller.rb:2)
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (25.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 93ms (Views: 24.6ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-13 21:11:02 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_flash.html.erb (1.2ms)
+Completed 200 OK in 76ms (Views: 70.9ms | ActiveRecord: 2.7ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:02 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:11:02 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:02 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:11:13 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_flash.html.erb (1.5ms)
+Completed 200 OK in 74ms (Views: 70.6ms | ActiveRecord: 1.1ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:13 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:11:13 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:13 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:24 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:11:24 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:24 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:27 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:11:28 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:28 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:11:34 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (22.9ms)
+  Rendered layouts/_flash.html.erb (1.0ms)
+Completed 200 OK in 142ms (Views: 137.5ms | ActiveRecord: 1.2ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:34 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:11:35 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:11:35 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:12:13 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (26.0ms)
+  Rendered layouts/_flash.html.erb (2.5ms)
+Completed 200 OK in 142ms (Views: 137.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cable" for ::1 at 2017-05-13 21:12:14 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:12:14 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:12:16 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 125ms (Views: 119.3ms | ActiveRecord: 3.4ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:12:16 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:12:16 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:12:16 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:12:38 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_flash.html.erb (1.1ms)
+Completed 200 OK in 229ms (Views: 224.2ms | ActiveRecord: 1.7ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:12:39 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:12:39 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:12:39 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:12:48 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 117ms (Views: 112.1ms | ActiveRecord: 3.5ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:12:48 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:12:48 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:12:48 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:13:23 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_flash.html.erb (0.9ms)
+Completed 200 OK in 126ms (Views: 124.2ms | ActiveRecord: 0.8ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:13:23 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:13:23 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:13:23 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:13:53 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (28.2ms)
+  Rendered layouts/_flash.html.erb (7.2ms)
+Completed 200 OK in 320ms (Views: 311.0ms | ActiveRecord: 1.6ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:13:54 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:13:55 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:13:55 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/about" for ::1 at 2017-05-13 21:14:01 -0400
+Processing by ProjectsController#about as HTML
+  Rendering projects/about.html.erb within layouts/application
+  Rendered projects/about.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.6ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 1.2ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:14:01 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:14:01 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:14:01 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:14:07 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:14:08 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:14:08 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:14:56 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (45.7ms)
+  Rendered layouts/_flash.html.erb (1.4ms)
+Completed 200 OK in 245ms (Views: 238.7ms | ActiveRecord: 1.4ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:14:56 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:14:57 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:14:57 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:17:34 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (33.1ms)
+  Rendered layouts/_flash.html.erb (1.0ms)
+Completed 200 OK in 173ms (Views: 168.8ms | ActiveRecord: 1.4ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:17:34 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:17:35 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:17:35 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:17:45 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (31.1ms)
+  Rendered layouts/_flash.html.erb (1.5ms)
+Completed 200 OK in 186ms (Views: 180.9ms | ActiveRecord: 1.3ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:17:45 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:17:46 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:17:46 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:18:25 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (26.2ms)
+  Rendered layouts/_flash.html.erb (1.1ms)
+Completed 200 OK in 143ms (Views: 138.0ms | ActiveRecord: 2.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:18:25 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:18:26 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:18:26 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:18:54 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_flash.html.erb (1.1ms)
+Completed 200 OK in 82ms (Views: 79.3ms | ActiveRecord: 0.8ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:18:54 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:18:55 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:18:55 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:19:37 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_flash.html.erb (0.9ms)
+Completed 200 OK in 121ms (Views: 117.7ms | ActiveRecord: 1.6ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:19:37 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:19:38 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:19:38 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:19:47 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_flash.html.erb (1.5ms)
+Completed 200 OK in 120ms (Views: 111.8ms | ActiveRecord: 6.5ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:19:47 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:19:48 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:19:48 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:19:56 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_flash.html.erb (1.0ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 1.2ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:19:56 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:19:57 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:19:57 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:20:23 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (21.3ms)
+  Rendered layouts/_flash.html.erb (1.9ms)
+Completed 200 OK in 150ms (Views: 144.4ms | ActiveRecord: 2.7ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:20:24 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:20:24 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:20:24 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:20:34 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_flash.html.erb (0.8ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.7ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:20:34 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:20:35 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:20:35 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/projects" for ::1 at 2017-05-13 21:21:50 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (8.9ms)
+  [1m[36mUser Load (44.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.9ms)
+Completed 200 OK in 211ms (Views: 161.6ms | ActiveRecord: 44.8ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:21:50 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:21:51 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:21:51 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/api/v1/projects" for ::1 at 2017-05-13 21:21:51 -0400
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (20.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 44ms (Views: 22.7ms | ActiveRecord: 20.7ms)
+
+
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:22:00 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (36.0ms)
+  Rendered layouts/_flash.html.erb (1.8ms)
+Completed 200 OK in 178ms (Views: 164.0ms | ActiveRecord: 2.8ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:22:01 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:22:01 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:22:01 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:22:26 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (45.4ms)
+  Rendered layouts/_flash.html.erb (1.4ms)
+Completed 200 OK in 249ms (Views: 238.3ms | ActiveRecord: 2.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:22:27 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:22:27 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:22:27 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:22:44 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_flash.html.erb (3.6ms)
+Completed 200 OK in 117ms (Views: 106.7ms | ActiveRecord: 7.5ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:22:44 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:22:45 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:22:45 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:22:59 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_flash.html.erb (0.8ms)
+Completed 200 OK in 104ms (Views: 100.5ms | ActiveRecord: 1.3ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:22:59 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:23:00 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:00 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/projects" for ::1 at 2017-05-13 21:23:05 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.9ms)
+Completed 200 OK in 107ms (Views: 101.5ms | ActiveRecord: 1.1ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:06 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:23:06 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:06 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/api/v1/projects" for ::1 at 2017-05-13 21:23:06 -0400
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (93.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 106ms (Views: 11.5ms | ActiveRecord: 93.5ms)
+
+
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/profile" for ::1 at 2017-05-13 21:23:09 -0400
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (81.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering users/profile.html.erb within layouts/application
+  [1m[36mProject Load (16.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."owner_id" = $1[0m  [["owner_id", 33]]
+  [1m[36mProject Load (63.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "assignments" ON "projects"."id" = "assignments"."project_id" WHERE "assignments"."user_id" = $1[0m  [["user_id", 33]]
+  Rendered users/profile.html.erb within layouts/application (869.8ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 1144ms (Views: 360.0ms | ActiveRecord: 775.3ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:10 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:23:10 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:10 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/projects/134" for ::1 at 2017-05-13 21:23:12 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"134"}
+  [1m[36mProject Load (6.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 134], ["LIMIT", 1]]
+  [1m[36mChatroom Load (14.0ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."slug" = $1 LIMIT $2[0m  [["slug", "134"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assignments" ON "users"."id" = "assignments"."user_id" WHERE "assignments"."project_id" = $1[0m  [["project_id", 134]]
+  [1m[35m (18.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "assignments" WHERE "assignments"."project_id" = $1 AND "assignments"."user_id" = $2[0m  [["project_id", 134], ["user_id", 33]]
+  Rendered projects/show.html.erb within layouts/application (39.8ms)
+  Rendered layouts/_flash.html.erb (0.9ms)
+Completed 200 OK in 199ms (Views: 79.4ms | ActiveRecord: 85.8ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:12 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:23:13 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:13 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/chatrooms/134" for ::1 at 2017-05-13 21:23:14 -0400
+Processing by ChatroomsController#show as HTML
+  Parameters: {"slug"=>"134"}
+  [1m[36mChatroom Load (1.0ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."slug" = $1 LIMIT $2[0m  [["slug", "134"], ["LIMIT", 1]]
+  Rendering chatrooms/show.html.erb within layouts/application
+  [1m[36mMessage Exists (23.6ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" WHERE "messages"."chatroom_id" = $1 LIMIT $2[0m  [["chatroom_id", 37], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."chatroom_id" = $1[0m  [["chatroom_id", 37]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [1 times] (8.4ms)
+  Rendered messages/_message_form.html.erb (34.7ms)
+  Rendered chatrooms/show.html.erb within layouts/application (136.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered layouts/_flash.html.erb (0.5ms)
+Completed 200 OK in 364ms (Views: 175.6ms | ActiveRecord: 100.4ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:15 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:23:15 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:15 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started POST "/messages" for ::1 at 2017-05-13 21:23:20 -0400
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r2ZnxM8SNFW5UUPVbeVjlI9/zMA8pihnRXUQMDi697iUrTGVyo5PSw9QvrC1RhUbWR5ZEETPBJkUH6ju4gl/zw==", "message"=>{"content"=>"hello hello", "chatroom_id"=>"37"}, "commit"=>"send"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (18.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChatroom Load (0.9ms)[0m  [1m[34mSELECT  "chatrooms".* FROM "chatrooms" WHERE "chatrooms"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[35mSQL (18.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "user_id", "chatroom_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "hello hello"], ["user_id", 33], ["chatroom_id", 37], ["created_at", 2017-05-14 01:23:20 UTC], ["updated_at", 2017-05-14 01:23:20 UTC]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to messages: {:message=>"hello hello", :user=>"K9Advantix"}
+Completed 200 OK in 55ms (ActiveRecord: 41.9ms)
+
+
+MessagesChannel transmitting {"message"=>"hello hello", "user"=>"K9Advantix"} (via streamed from messages)
+MessagesChannel transmitting {"message"=>"hello hello", "user"=>"K9Advantix"} (via streamed from messages)
+Started GET "/" for ::1 at 2017-05-13 21:23:22 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (24.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (42.4ms)
+  Rendered layouts/_flash.html.erb (0.8ms)
+Completed 200 OK in 113ms (Views: 85.1ms | ActiveRecord: 24.9ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:22 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/cable" for ::1 at 2017-05-13 21:23:23 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:23:23 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:30:17 -0400
+MessagesChannel stopped streaming from messages
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:30:35 -0400
+MessagesChannel stopped streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:31:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /Users/georgeli/challenges/week 9/breakable/synapse-connection/app/controllers/application_controller.rb:4)
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendered projects/home.html.erb within layouts/application (53.2ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+Completed 200 OK in 868ms (Views: 844.8ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/cable" for ::1 at 2017-05-13 21:31:58 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:31:59 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/" for ::1 at 2017-05-13 21:38:27 -0400
+Processing by ProjectsController#home as HTML
+  Rendering projects/home.html.erb within layouts/application
+  Rendered projects/home.html.erb within layouts/application (29.3ms)
+  Rendered layouts/_flash.html.erb (0.8ms)
+Completed 200 OK in 349ms (Views: 334.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2017-05-13 21:38:29 -0400
+Started GET "/cable/" [WebSocket] for ::1 at 2017-05-13 21:38:29 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MessagesChannel is transmitting the subscription confirmation
+MessagesChannel is streaming from messages
+Started GET "/profile" for ::1 at 2017-05-13 21:38:40 -0400
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  Rendered users/profile.html.erb within layouts/application (61.2ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    13: 
+    14: <div class='profileInfo' id='difColorStripe'>
+    15:   <p>
+    16:     <%= @current_user.username %> | <%= link_to 'Edit Profile', edit_user_registration_path, id: 'editProfileButton' %>
+    17:   </p>
+    18:   <p id='profileFullName'>
+    19:     <%= @current_user.first_name %>
+  
+app/views/users/profile.html.erb:16:in `_app_views_users_profile_html_erb___163404049971575744_70327935600680'
+  Rendering /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendering /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (158.4ms)
+Started GET "/profile" for ::1 at 2017-05-13 21:38:41 -0400
+Processing by UsersController#profile as HTML
+  Rendering users/profile.html.erb within layouts/application
+  Rendered users/profile.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    13: 
+    14: <div class='profileInfo' id='difColorStripe'>
+    15:   <p>
+    16:     <%= @current_user.username %> | <%= link_to 'Edit Profile', edit_user_registration_path, id: 'editProfileButton' %>
+    17:   </p>
+    18:   <p id='profileFullName'>
+    19:     <%= @current_user.first_name %>
+  
+app/views/users/profile.html.erb:16:in `_app_views_users_profile_html_erb___163404049971575744_70327937267720'
+  Rendering /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/georgeli/.rvm/gems/ruby-2.3.3@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.2ms)
+Finished "/cable/" [WebSocket] for ::1 at 2017-05-13 21:39:01 -0400
+MessagesChannel stopped streaming from messages

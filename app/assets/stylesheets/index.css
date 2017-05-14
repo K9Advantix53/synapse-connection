@@ -33,7 +33,7 @@ input, textarea {
 }
 
 html {
-  background: url('plane-long.jpg');
+  background: url('plane-long-crop.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -344,6 +344,10 @@ a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+.homeButton {
+  padding-top: 0;
 }
 
 /*ACCORDION CODE*/

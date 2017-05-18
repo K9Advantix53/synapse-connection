@@ -38,6 +38,15 @@ class ProjectsController < ApplicationController
     @project=Project.find(params[:id])
     @chatroom=Chatroom.find_by(slug: @project.id)
     @current_user=current_user
+    @owner=nil
+    current_user.owned_projects.each do |project|
+      if project.id == @project.id
+        @owner=true
+        break
+      else
+        @owner=false
+      end
+    end
   end
 
   def edit

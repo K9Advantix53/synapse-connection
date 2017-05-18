@@ -9,7 +9,7 @@
     <% end %>
   </div>
   <div>
-    <% if !Assignment.where(project_id: @project.id, user_id: current_user.id).empty? %>
+    <% if @owner || !Assignment.where(project_id: @project.id, user_id: current_user.id).empty? %>
       <%= link_to 'Chatroom', chatroom_path(@project) %>
     <% end %>
   </div>

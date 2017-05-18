@@ -9,7 +9,9 @@
     <% end %>
   </div>
   <div>
-    <%= link_to 'Chatroom', chatroom_path(@project) %>
+    <% if !Assignment.where(project_id: @project.id, user_id: current_user.id).empty? %>
+      <%= link_to 'Chatroom', chatroom_path(@project) %>
+    <% end %>
   </div>
   <div class='deleteProject'>
     <% if user_signed_in? && @current_user.id == @project.owner_id %>
@@ -37,7 +39,8 @@
   <% end %>
 
   <% if user_signed_in? && Assignment.where(project_id: params[:id], user_id: current_user.id).empty?%>
-    <div id='joinButton'>
+    <div class="button">
+      <%= link_to 'Join This Project!', assignments_path(project_id: @project.id, user_id: current_user.id, project: @project), method: :post %>
     </div>
   <% end %>
 

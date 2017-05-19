@@ -1,21 +1,26 @@
 <h1>Edit Project</h1>
 
-<%= form_for(@project) do |f| %>
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
 
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
+<% if flash[:error].empty? %>
+  <%= form_for(@project) do |f| %>
+    <div class="field">
+      <%= f.label :title %><br />
+      <%= f.text_field :title %>
+    </div>
 
-  <div id='dropDown'>
-    <%= f.select :language, @languages %>
-  </div>
+    <div class="field">
+      <%= f.label :description %><br />
+      <%= f.text_area :description %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Update Project"%>
-  </div>
+    <div id='dropDown'>
+      <%= f.select :language, @languages %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Update Project"%>
+    </div>
+  <% end %>
+<% else %>
+  <div>YOU ARE NOT THE OWNER!</div>
 <% end %>

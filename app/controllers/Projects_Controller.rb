@@ -49,38 +49,40 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def edit
+  def authenticate_user
     @project=Project.find(params[:id])
-    @languages=Project::LANGUAGES
-    # @project_coders = []
-    # @project.users.each do |user|
-    #   @project_coders << user.username
-    # end
-  end
-
-  def update
-    @project=Project.find(params[:id])
-    chatroom=Chatroom.find_by(slug: @project.id)
-    chatroom.topic=@project.title
-    binding.pry
-  end
-
-  def update
-    @project = Project.find(params[:id])
-    if @project.update(project_params_update)
-      flash[:success] = "Project Updated Successfully"
-      redirect_to project_path(@project)
+    if current_user.id == @project.id
+      yield
     else
-      flash[:errors] = @project.errors.full_messages.to_sentence
-      redirect_to edit_project_path
+      flash[:error] = 'This is not your project!'
+    end
+  end
+
+  def edit
+    authenticate_user do
+      @languages = Project::LANGUAGES
+    end
+  end
+
+  def update
+    authenticate_user do
+      if @project.update(project_params_update)
+        flash[:success] = "Project Updated Successfully"
+        redirect_to project_path(@project)
+      else
+        flash[:errors] = @project.errors.full_messages.to_sentence
+        redirect_to edit_project_path
+      end
     end
   end
 
   def destroy
-    @project=Project.find(params[:id])
-    @project.destroy
-    @project.assignments.destroy
-    redirect_to root_path
+    authenticate_user do
+      @project=Project.find(params[:id])
+      @project.destroy
+      @project.assignments.destroy
+      redirect_to root_path
+    end
   end
 
   def search

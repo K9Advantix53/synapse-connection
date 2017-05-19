@@ -1,24 +1,38 @@
-# README
+Heroku link: synapse-coder.herokuapp.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*Built during Boston's 16th Launch Academy Cohort's Breakable Toy Weeks*
+Synapse is a web platform that serves to connect businesses with developers. Developers will find a stream of projects to hone their programming skills, and businesses who don't have the recruiting infrastructure can access the developer job market.
 
-Things you may want to cover:
+To run this code on your local machine:
 
-* Ruby version
+  $ git clone https://github.com/K9Advantix53/synapse-connection.git
+  $ cd synapse-coder
+  $ bundle install
+  $ npm install
+  $ rake db:create db:migrate db:seed
+  $ rails s
 
-* System dependencies
+  in another terminal window, run:
 
-* Configuration
+  $ npm start
 
-* Database creation
 
-* Database initialization
+*Main Features:*
+-all CRUD actions
+-vanilla css
+-views rendered almost entirely in React
+-fetch calls to Rails endpoints
+-Rails on a Postgres database
+-live chat using ActionCable
+-Google maps API
+-search engine built on React
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Technologies:*
+-Ruby on Rails (Rails 5)
+-React.js
+-Devise
+-RSpec
+-Capybara
+-PostgreSQL (ActiveRecord through Rails 5)
+-ActionCable (Rails 5)
+-Google Maps API

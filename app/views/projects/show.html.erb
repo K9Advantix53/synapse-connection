@@ -15,7 +15,7 @@
   </div>
   <div class='deleteProject'>
     <% if user_signed_in? && @current_user.id == @project.owner_id %>
-      <%= link_to "Delete Project", @project, method: :delete%>
+      <%= link_to "Delete Project", @project, method: :delete, data: { confirm: 'Are you sure?' }%>
     <% end %>
   </div>
 </div>

@@ -77,12 +77,11 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    authenticate_user do
-      @project=Project.find(params[:id])
-      @project.destroy
-      @project.assignments.destroy
-      redirect_to root_path
-    end
+    @project=Project.find(params[:id])
+    @project.assignments.destroy
+    Chatroom.where(topic: @project.title).first.destroy
+    @project.destroy
+    redirect_to root_path
   end
 
   def search
